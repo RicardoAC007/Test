@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Academy Quest</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game-shell">
+    <h1>AI Academy Quest</h1>
+    <p class="subtitle">Help students master AI concepts through fun classroom challenges.</p>
+
+    <section class="hud">
+      <div><strong>Level:</strong> <span id="level">1</span></div>
+      <div><strong>Knowledge:</strong> <span id="score">0</span></div>
+      <div><strong>Focus:</strong> <span id="lives">3</span></div>
+    </section>
+
+    <section class="card" id="question-card">
+      <h2 id="topic">Topic</h2>
+      <p id="question">Question text appears here.</p>
+      <div id="answers" class="answers"></div>
+      <p id="feedback" class="feedback"></p>
+      <button id="next-btn" hidden>Next Challenge</button>
+    </section>
+
+    <section class="card" id="result-card" hidden>
+      <h2 id="result-title"></h2>
+      <p id="result-message"></p>
+      <button id="restart-btn">Play Again</button>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
